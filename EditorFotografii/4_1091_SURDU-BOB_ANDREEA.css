@@ -1,0 +1,83 @@
+body {
+    font-family: Tahoma;
+    font-size: 11pt;
+}
+h1 {
+    background-color: #ecd0fb;
+    color: blue;
+    padding: 12px;
+}
+input[type="button"],
+input[type="file"]+label {
+    margin-top: 8px;
+    width: 100%;
+    height: 36px;
+    box-shadow: inset 0px 1px 0px 0px #97c4fe;
+    background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+    background-color: #3d94f6;
+    border-radius: 3px 10px 3px 10px;
+    border: 1px solid #337fed;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 11pt;
+    padding: 8px;
+}
+input[type="button"]:hover,
+input[type="file"]+label:hover {
+    background: #673ab7;
+}
+input[type="file"] {
+    display: none;
+}
+
+#continut {
+    width:1800px;
+    margin:0 auto;
+    margin-top: 20px;
+}
+#meniu {
+    margin-left: 20px;
+    margin-right: 25px;
+    display: inline-block;
+    width: 250px;
+    vertical-align: top;
+}
+
+form {
+    margin-top: 10px;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    padding: 10px;	
+    float: right;	
+    width: 90%;	
+}
+.formLabel {
+    float: left;
+    width: 40%;
+    margin-top: 5px;
+    color: navy;
+}
+.formInput {
+    font-size: 11pt;
+    float: right;	
+    width: 60%;
+    height: 20px;
+    margin-top: -20px;
+}
+select {
+    font-size: 11pt;
+    float: right;	
+    width: 60%;
+    height: 24px;
+}
+#colorPicker {
+    float: right;
+    margin-top: 5px;
+    width: 60%;
+    height: 24px;
+}
+input[type="checkbox"] {
+    margin-top: 10px;
+}

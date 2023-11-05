@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Editor fotografii</title>
+        <link rel="stylesheet" href="4_1091_SURDU-BOB_ANDREEA.css">
+        <script type="text/javascript" src="4_1091_SURDU-BOB_ANDREEA.js"></script>
+    </head>
+    <body>
+        <h1>Editor fotografii</h1>
+        <div id="continut">
+            <div id="meniu">
+                <br />
+                <input type="file" id="selectFisier" value="Încarcă imagine">
+                <label for="selectFisier">Încarcă imagine</label>
+                <br />
+                <br />
+                <input type="button" id="btnSave" value="Salvează">
+                <input type="button" id="btnCrop" value="Crop">
+                <form action="#">
+                    <label for="selectEfect" class="formLabel">Efect:</label>
+                    <select id="selectEfect">
+                        <option>Negativ</option>
+                        <option>Tonuri gri</option>
+                        <option>Sepia</option>
+                        <option>Modificare stralucire</option>
+                        <option>Modificare contrast</option>
+                        <option>Albastru</option>
+                        <option>Inversare rosu-verde</option>
+                    </select>        
+                    <input type="button" id="btnEffect" value="Aplică efect">
+                </form>
+                <form action="#">
+                    <label for="lungime" class="formLabel">Lungime:</label>
+                    <input name="lungime" id="lungime" class="formInput">
+                    <label for="latime" class="formLabel">Lățime:</label>
+                    <input name="latime" id="latime" class="formInput">
+                    <input type="button" id="btnScale" value="Scalează">
+                </form>
+                <form action="#">
+                    <label for="textul" class="formLabel">Text:</label>
+                    <input id="textul" name="textul" class="formInput">
+                    <label for="fontSize" class="formLabel">Dimensiune:</label>
+                    <input id="fontSize" name="fontSize" class="formInput">
+                    <label class="formLabel" for="colorPicker">Culoare:</label>
+                    <input type="color" id="colorPicker" name="colorPicker" value="#e66465">
+                    <input type="button" id="btnText" value="Adaugă text">
+                </form>
+                <input type="button" id="btnClear" value="Șterge selecție">
+                <input type="checkbox" id="histograma" name="histograma">
+                <label for="histograma">Afișare histogramă selecție</label>
+            </div>
+    
+            <canvas id="desen" width="1000" height="600" style="border: 1px solid black">
+            </canvas>
+        </div>
+    </body>
+</html>
